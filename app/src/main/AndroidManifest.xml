@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.monkey.finalproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".audio.MusicService" />
+
+        <activity android:name=".ListViewActivity" />
+        <activity android:name=".WpViewPagerActivity" />
+        <activity android:name=".fragment.FirstFragment" />
+        <activity android:name=".fragment.SecondFragment" />
+        <activity android:name=".fragment.ThirdFragment" />
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".PlayActivity" />
+        <activity android:name=".ClickDialogActivity" />
+        <activity android:name=".PlayPagerActivity" />
+        <activity android:name=".view.Battle" />
+        <activity android:name=".view.About" />
+    </application>
+
+</manifest>
